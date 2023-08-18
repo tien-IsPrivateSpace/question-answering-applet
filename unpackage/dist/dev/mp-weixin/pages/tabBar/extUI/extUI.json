@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "周边生活",
+  "usingComponents": {
+    "u-link": "../../../components/u-link/u-link"
+  }
+}

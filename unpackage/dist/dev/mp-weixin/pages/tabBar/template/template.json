@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "个人空间",
+  "usingComponents": {
+    "u-link": "../../../components/u-link/u-link"
+  }
+}

@@ -14,9 +14,9 @@
 	"pages": [
 		// pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
 		{
-			"path": "pages/tabBar/component/component",
+			"path": "pages/tabBars/answers/answers",
 			"style": {
-				"navigationBarTitleText": "内置组件",
+				"navigationBarTitleText": "小墨问答",
 				"app-plus": {
 					"bounce": "vertical",
 					"titleNView": {
@@ -31,9 +31,9 @@
 			}
 		},
 		{
-			"path": "pages/tabBar/API/API",
+			"path": "pages/tabBars/creations/creations",
 			"style": {
-				"navigationBarTitleText": "接口",
+				"navigationBarTitleText": "创新创作",
 				"app-plus": {
 					"titleNView": {
 						"buttons": [{
@@ -47,9 +47,9 @@
 			}
 		},
 		{
-			"path": "pages/tabBar/template/template",
+			"path": "pages/tabBars/periphery/periphery",
 			"style": {
-				"navigationBarTitleText": "模版",
+				"navigationBarTitleText": "周边生活",
 				"app-plus": {
 					"titleNView": {
 						"buttons": [{
@@ -63,9 +63,9 @@
 			}
 		},
 		{
-			"path": "pages/tabBar/extUI/extUI",
+			"path": "pages/tabBars/mine/mine",
 			"style": {
-				"navigationBarTitleText": "扩展组件",
+				"navigationBarTitleText": "个人空间",
 				"app-plus": {
 					"titleNView": {
 						"buttons": [{
@@ -1346,32 +1346,35 @@
 
 	},
 	"tabBar": {
-		"color": "#7A7E83",
+		"color": "#c000000",
 		"selectedColor": "#007AFF",
 		"borderStyle": "black",
 		"backgroundColor": "#F8F8F8",
 		"list": [{
-				"pagePath": "pages/tabBar/component/component",
+				"pagePath": "pages/tabBars/answers/answers",
 				"iconPath": "static/component.png",
 				"selectedIconPath": "static/componentHL.png",
-				"text": "内置组件"
+				"text": "问答"
 			},
 			{
-				"pagePath": "pages/tabBar/API/API",
+				"pagePath": "pages/tabBars/creations/creations",
 				"iconPath": "static/api.png",
 				"selectedIconPath": "static/apiHL.png",
-				"text": "接口"
-			}, {
-				"pagePath": "pages/tabBar/extUI/extUI",
+				"text": "创作"
+			},
+			 {
+				"pagePath": "pages/tabBars/periphery/periphery",
 				"iconPath": "static/extui.png",
 				"selectedIconPath": "static/extuiHL.png",
-				"text": "扩展组件"
-			}, {
-				"pagePath": "pages/tabBar/template/template",
+				"text": "生活"
+			},
+          {
+				"pagePath": "pages/tabBars/mine/mine",
 				"iconPath": "static/template.png",
 				"selectedIconPath": "static/templateHL.png",
-				"text": "模板"
+				"text": "我的"
 			}
+
 		]
 	}
 }

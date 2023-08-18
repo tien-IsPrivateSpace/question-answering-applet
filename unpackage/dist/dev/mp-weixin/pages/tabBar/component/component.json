@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "小墨问答",
+  "usingComponents": {
+    "u-link": "../../../components/u-link/u-link"
+  }
+}
