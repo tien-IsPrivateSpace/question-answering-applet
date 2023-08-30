@@ -2,23 +2,23 @@
 
 <template>
   <div>
-    <header class="flex header items-center">
+    <header class="flex items-center">
       <img src="@/static/logo.png" />
       <div class="flex-col header-spans">
-        <span>超大佬</span>
-        <span>超大佬的小程序</span>
+        <span class="font-lg">超大佬</span>
+        <span class="font-base">超大佬的小程序</span>
       </div>
     </header>
     <main>
-      <h3 v-for="item in 5">列表{{ item }}</h3>
+      <h3 v-for="item in 50">列表{{ item }}</h3>
     </main>
   </div>
 </template>
 
 <style lang="scss" scoped>
-.header {
+header {
   padding: 20rpx;
-  background: -webkit-linear-gradient(315deg, #42d392 25%, #647eff);
+  background: -webkit-linear-gradient(315deg, #e7f8ff 25%, #d8f4f9);
 
   img {
     width: 100rpx;
@@ -27,12 +27,7 @@
   }
   .header-spans {
     margin-left: 10rpx;
-
-    span:nth-child(1) {
-      font-size: 30rpx;
-    }
     span:nth-child(2) {
-      font-size: 24rpx;
       color: #666;
     }
   }

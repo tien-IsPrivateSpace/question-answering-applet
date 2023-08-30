@@ -18,3 +18,12 @@
 .flex-1 {
   flex: 1;
 }
+.font-base {
+  font-size: 24rpx;
+}
+.font-lg {
+  font-size: 30rpx;
+}
+.w-full {
+  width: 100%;
+}
