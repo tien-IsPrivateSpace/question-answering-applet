@@ -1,4 +1,24 @@
-<script setup></script>
+<script setup>
+import { ref } from 'vue'
+const mockData = [
+  {
+    id: 1,
+    title: '对话1',
+    count: 2,
+    time: '2023-08-30 22:33'
+  },
+  {
+    id: 2,
+    title: '对话2',
+    count: 3,
+    time: '2023-08-30 23:44'
+  }
+]
+
+function handleClick(item) {
+  console.log(item)
+}
+</script>
 
 <template>
   <div class="container">
@@ -8,11 +28,11 @@
     </header>
     <main>
       <div class="list w-full">
-        <div class="list-item" v-for="item in 3">
-          <strong class="list-item-title font-lg">对话{{ item }}</strong>
+        <div @click="handleClick(item)" class="list-item" :key="item.id" v-for="item in mockData">
+          <strong class="list-item-title font-lg">{{ item.title }}</strong>
           <div class="list-item-bottom flex justify-between font-base">
-            <span>123条对话</span>
-            <span>2023-08-32 25:61</span>
+            <span>{{ item.count }}条对话</span>
+            <span>{{ item.time }}</span>
           </div>
         </div>
       </div>
