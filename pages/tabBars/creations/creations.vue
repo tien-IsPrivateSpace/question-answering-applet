@@ -1,5 +1,5 @@
 <script setup>
-import { ref } from 'vue'
+import { onLoad } from '@dcloudio/uni-app'
 const mockData = [
   {
     id: 1,
@@ -18,6 +18,10 @@ const mockData = [
 function handleClick(item) {
   console.log(item)
 }
+
+onLoad((option) => {
+  console.log('creations load')
+})
 </script>
 
 <template>
